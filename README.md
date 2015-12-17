@@ -39,6 +39,12 @@ Then whenever you want to link to a person's page on WriteInPublic you can use t
 {% endwriteinpublic_link %}
 ```
 
+Which will result in something like this:
+
+```html
+<a href="http://writetothem.writeinpublic.com/en/write/who/?person_id=person/123abc">Write to Bob on WriteInPublic!</a>
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
