@@ -4,23 +4,40 @@ Link to WriteInPublic from Jekyll sites.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this to your application's Gemfile:
 
 ```ruby
-gem 'jekyll-writeinpublic'
+group :jekyll_plugins do
+  gem 'jekyll-writeinpublic'
+end
 ```
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
+Or install it yourself as and then manually add it to `_config.yml`:
 
     $ gem install jekyll-writeinpublic
 
 ## Usage
 
-TODO: Write usage instructions here
+First you'll need to configure the subdomain for your WriteInPublic instance in `_config.yml`:
+
+```yaml
+writeinpublic:
+  subdomain: writetothem
+```
+
+Then whenever you want to link to a person's page on WriteInPublic you can use the following liquid tag block:
+
+```liquid
+{% writeinpublic_link person.id %}
+
+  Write to {{ person.name }} on WriteInPublic!
+
+{% endwriteinpublic_link %}
+```
 
 ## Development
 
