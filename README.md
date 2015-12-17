@@ -1,4 +1,4 @@
-# Jekyll::Writeinpublic [![Build Status](https://travis-ci.org/everypolitician/jekyll-writeinpublic.svg?branch=master)](https://travis-ci.org/everypolitician/jekyll-writeinpublic)
+# Jekyll::Writeinpublic [![Build Status](https://travis-ci.org/everypolitician/jekyll-writeinpublic.svg?branch=master)](https://travis-ci.org/everypolitician/jekyll-writeinpublic) [![Gem Version](https://badge.fury.io/rb/jekyll-writeinpublic.svg)](https://badge.fury.io/rb/jekyll-writeinpublic)
 
 Link to WriteInPublic from Jekyll sites.
 
