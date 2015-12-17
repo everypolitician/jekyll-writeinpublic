@@ -26,7 +26,7 @@ First you'll need to configure the subdomain for your WriteInPublic instance in 
 
 ```yaml
 writeinpublic:
-  subdomain: writetothem
+  subdomain: kenya-politicians
 ```
 
 Then whenever you want to link to a person's page on WriteInPublic you can use the following liquid tag block:
@@ -42,7 +42,7 @@ Then whenever you want to link to a person's page on WriteInPublic you can use t
 Which will result in something like this:
 
 ```html
-<a href="http://writetothem.writeinpublic.com/en/write/who/?person_id=person/123abc">Write to Bob on WriteInPublic!</a>
+<a href="http://kenya-politicians.writeinpublic.com/en/write/who/?person_id=person/123abc">Write to Bob on WriteInPublic!</a>
 ```
 
 ## Development
