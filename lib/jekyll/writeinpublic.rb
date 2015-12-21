@@ -14,6 +14,7 @@ module Jekyll
         site = context.registers[:site]
         writeinpublic = site.config['writeinpublic']
         return unless writeinpublic && writeinpublic.key?('subdomain')
+        return if writeinpublic['disabled']
         person_id = context[@markup]
         %(<a href="#{link(writeinpublic['subdomain'], person_id)}">#{super}</a>)
       end
