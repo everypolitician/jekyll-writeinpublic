@@ -45,6 +45,16 @@ Which will result in something like this:
 <a href="http://kenya-politicians.writeinpublic.com/en/write/who/?person_id=person/123abc">Write to Bob on WriteInPublic!</a>
 ```
 
+If your WriteInPublic site is still in testing mode you might want to disable this plugin temporarily so the link doesn't show up on the site. You can do this with the `disabled` option:
+
+```yaml
+writeinpublic:
+  subdomain: kenya-politicians
+  disabled: true
+```
+
+With this set the plugin won't render anything.
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
