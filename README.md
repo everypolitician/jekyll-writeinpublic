@@ -42,7 +42,29 @@ Then whenever you want to link to a person's page on WriteInPublic you can use t
 Which will result in something like this:
 
 ```html
-<a href="http://kenya-politicians.writeinpublic.com/en/write/who/?person_id=person/123abc">Write to Bob on WriteInPublic!</a>
+<a href="http://kenya-politicians.writeinpublic.com/en/write/who/?person_id=person/123abc">
+  Write to Bob on WriteInPublic!
+</a>
+```
+
+### Adding a class
+
+If you want to add classes to the generated link then you can specify these as part of the `writeinpublic_link` tag.
+
+```liquid
+{% writeinpublic_link person.id class: 'writeinpublic writeinpublic-link' %}
+
+  Write to {{ person.name }} on WriteInPublic!
+
+{% endwriteinpublic_link %}
+```
+
+Which will result in something like this:
+
+```html
+<a href="http://kenya-politicians.writeinpublic.com/en/write/who/?person_id=person/123abc" class="writeinpublic writeinpublic-link">
+  Write to Bob on WriteInPublic!
+</a>
 ```
 
 If your WriteInPublic site is still in testing mode you might want to disable this plugin temporarily so the link doesn't show up on the site. You can do this with the `disabled` option:
